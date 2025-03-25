@@ -8,11 +8,11 @@ import {
   Activity,
   Settings,
   LogOut,
-  Utensils,
   Calculator,
   Weight,
   ChevronRight,
   ChevronLeft,
+  Trophy
 } from "lucide-react";
 import { useAuthStore } from "../store/authStore";
 import { supabase } from "../lib/supabaseClient";
@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
             <DashboardNavItem
               to="/routines"
               icon={
-                <Utensils className="h-5 w-5 sm:h-6 sm:w-6 hover:text-[#ff9404] transition-all duration-300" />
+                <Trophy className="h-5 w-5 sm:h-6 sm:w-6 hover:text-[#ff9404] transition-all duration-300" />
               }
             />
             <DashboardNavItem
